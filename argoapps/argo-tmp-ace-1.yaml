@@ -16,7 +16,7 @@ spec:
     automated:
       selfHeal: true
   ignoreDifferences:
-  - group: "appconnect.ibm.com/v1beta1"
+  - group: "appconnect.ibm.com"
     kind: "IntegrationRuntime"
     jsonPointers:
     - /spec/configurations
