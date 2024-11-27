@@ -3,6 +3,8 @@ kind: Dashboard
 metadata:
   labels:
     backup.appconnect.ibm.com/component: dashboard
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
   name: db-02-quickstart-cs
 spec:
   api:
