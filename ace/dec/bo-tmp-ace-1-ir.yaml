@@ -1,0 +1,30 @@
+kind: IntegrationRuntime
+apiVersion: appconnect.ibm.com/v1beta1
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+  labels:
+    backup.appconnect.ibm.com/component: integrationruntime
+  name: bo-tmp-ace-1-ir
+  namespace: bo-tmp-ace-1
+spec:
+  license:
+    accept: true
+    license: L-XRNH-47FJAW
+    use: CloudPakForIntegrationNonProduction
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: runtime
+          resources:
+            requests:
+              cpu: 300m
+              memory: 368Mi
+  version: '12.0'
+  barURL:
+    - >-
+      https://artifactory.dsv.com/artifactory/episocp-private-package-local/TEMP/JB-infra-test/EPIS_HelloWorld_HTTP.bar/EPIS_HelloWorld_HTTP.bar
+  configurations:
+    - barauth-ace-config-cs
+  logFormat: basic

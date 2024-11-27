@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ace-serviceping
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: bo-tmp-ace-1
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: TEMP/BO-Infra-test/ace/
+    repoURL: 'https://DSV-Integration@dev.azure.com/DSV-Integration/APP-ID-7315/_git/APP-ID-7315-MQ'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+  ignoreDifferences:
+  - group: "appconnect.ibm.com/v1beta1"
+    kind: "IntegrationRuntime"
+    jsonPointers:
+    - /spec/configurations
