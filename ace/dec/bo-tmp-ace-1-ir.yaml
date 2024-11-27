@@ -24,7 +24,7 @@ spec:
   version: '12.0'
   barURL:
     - >-
-      https://artifactory.dsv.com/artifactory/episocp-private-package-local/TEMP/JB-infra-test/EPIS_HelloWorld_HTTP.bar/EPIS_HelloWorld_HTTP.bar
+      http://10.21.15.108/PingService.bar
   configurations:
     - barauth-ace-config-cs
   logFormat: basic
