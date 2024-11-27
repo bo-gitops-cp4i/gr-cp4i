@@ -18,9 +18,9 @@ spec:
     automated:
       selfHeal: true
   ignoreDifferences:
-  - group: "*"
-    kind: IntegrationRuntime
-    name: bo-tmp-ace-1-ir
+  - group: "appconnect.ibm.com"
+    kind: "IntegrationRuntime"
+    name: "bo-tmp-ace-1-ir"
     jsonPointers:
     - /spec/configurations
 
