@@ -2,10 +2,10 @@ apiVersion: appconnect.ibm.com/v1beta1
 kind: Configuration
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "21"
   name: barauth-ace-config-cs
   namespace: bo-tmp-ace-1
 spec:
   description: configuration to access git repo where bars are located
-  secretName: abo-artifactory-ace
+  secretName: ace-boutilfyre-barauth-cs
   type: barauth

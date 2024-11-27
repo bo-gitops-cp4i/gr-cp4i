@@ -9,8 +9,8 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: TEMP/BO-Infra-test/ace/
-    repoURL: 'https://DSV-Integration@dev.azure.com/DSV-Integration/APP-ID-7315/_git/APP-ID-7315-MQ'
+    path: ace/dec
+    repoURL: 'https://github.com/bo-gitops-cp4i/gr-cp4i.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
