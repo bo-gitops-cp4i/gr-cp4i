@@ -1,7 +1,9 @@
 namePrefix: prod-
-commonLabels:
-  variant: production
 resources:
 - ../../base
-patchesStrategicMerge:
-- ns-bo-tmp-ace-1.yaml
+labels:
+- includeSelectors: true
+  pairs:
+    variant: production
+patches:
+- path: ns-bo-tmp-ace-1.yaml
