@@ -1,8 +1,11 @@
-commonLabels:
-  app: demo
-
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 resources:
-  - bo-tmp-ace-1-conf.yaml
-  - bo-tmp-ace-1-ir.yaml
-  - bo-tmp-ace-1-sec.yaml
-  - ns-bo-tmp-ace-1.yaml
+- bo-tmp-ace-1-conf.yaml
+- bo-tmp-ace-1-ir.yaml
+- bo-tmp-ace-1-sec.yaml
+- ns-bo-tmp-ace-1.yaml
+labels:
+- includeSelectors: true
+  pairs:
+    app: demo
