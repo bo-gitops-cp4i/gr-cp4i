@@ -1,0 +1,7 @@
+kind: IntegrationRuntime
+apiVersion: appconnect.ibm.com/v1beta1
+metadata:
+  name: bo-tmp-ace-1-ir
+spec:
+  configurations:
+    - prod-barauth-ace-config-cs

@@ -7,4 +7,5 @@ labels:
   pairs:
     variant: production
 patches:
-- path: ns-bo-tmp-ace-1.yaml
+- path: bo-tmp-ace-1-conf.yaml
+- path: bo-tmp-ace-1-ir.yaml

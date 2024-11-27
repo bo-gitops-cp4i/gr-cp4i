@@ -1,0 +1,6 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: Configuration
+metadata:
+  name: barauth-ace-config-cs
+spec:
+  secretName: prod-ace-boutilfyre-barauth-cs
