@@ -1,6 +1,7 @@
 namePrefix: prod-
 resources:
 - ../../base
+- ns-bo-tmp-ace-1.yaml
 labels:
 - includeSelectors: true
   pairs:
