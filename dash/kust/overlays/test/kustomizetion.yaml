@@ -1,0 +1,7 @@
+namePrefix: test-
+commonLabels:
+  variant: test
+bases:
+- ../../base
+patchesStrategicMerge:
+#- config-map.yaml
