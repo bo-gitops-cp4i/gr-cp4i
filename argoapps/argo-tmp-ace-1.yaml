@@ -13,11 +13,14 @@ spec:
     repoURL: 'https://github.com/bo-gitops-cp4i/gr-cp4i.git'
     targetRevision: HEAD
   syncPolicy:
+    syncOptions:
+    - RespectIgnoreDifferences=true
     automated:
       selfHeal: true
   ignoreDifferences:
-  - group: appconnect
+  - group: "*"
     kind: IntegrationRuntime
     name: bo-tmp-ace-1-ir
     jsonPointers:
     - /spec/configurations
+
