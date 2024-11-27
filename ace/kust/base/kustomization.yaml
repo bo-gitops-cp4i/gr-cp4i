@@ -1,0 +1,8 @@
+commonLabels:
+  app: demo
+
+resources:
+  - bo-tmp-ace-1-conf.yaml
+  - bo-tmp-ace-1-ir.yaml
+  - bo-tmp-ace-1-sec.yaml
+  - ns-bo-tmp-ace-1.yaml
