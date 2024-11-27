@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ace-serviceping
+  name: ace-serviceping-2
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: bo-tmp-ace-1
+    namespace: bo-tmp-ace-2
     server: 'https://kubernetes.default.svc'
   project: default
   source:
