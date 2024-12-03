@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ns-gitops-for-cp4i.yaml
 - cr-argocd-gitops-for-cp4i.yaml
+- cr-appproject-cp4i-project.yaml
 # labels:
 # - includeSelectors: true
 #   pairs:

@@ -4,10 +4,10 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: PruneLast=true
     argocd.argoproj.io/sync-wave: "-5"
-  name: dev-cluster
+  name: ace-dev
   namespace: argocd
 spec:
-  description: ACE Applications  
+  description: ACE Applications
   sourceRepos:
   - '*'  
   destinations:
