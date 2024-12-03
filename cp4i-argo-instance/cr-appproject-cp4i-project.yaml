@@ -5,7 +5,6 @@ metadata:
     argocd.argoproj.io/sync-options: PruneLast=true
     argocd.argoproj.io/sync-wave: "-5"
   name: ace-dev
-  namespace: argocd
 spec:
   description: ACE Applications
   sourceRepos:
