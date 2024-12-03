@@ -1,0 +1,51 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  name: gitops-for-cp4i
+  namespace: openshift-gitops
+spec:
+  generators:
+  - git:
+      files:
+      - path: argo-projects/dev/ace/**/config.json
+      repoURL: https://DSV-Integration@dev.azure.com/DSV-Integration/APP-ID-6848/_git/CIDevOps-Test
+      requeueAfterSeconds: 20
+      revision: ""
+      template:
+        metadata: {}
+        spec:
+          destination: {}
+          project: ""
+          source:
+            repoURL: ""
+  syncPolicy:
+    preserveResourcesOnDeletion: true  
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/managed-by: argocd-bootstrap
+        app.kubernetes.io/name: '{{ appName }}'
+      name: dev-ace-{{ userGivenName }}
+      namespace: argocd
+    spec:
+      destination:
+        namespace: '{{ destNamespace }}'
+        server: '{{ destServer }}'
+      ignoreDifferences:
+      - group: argoproj.io
+        jsonPointers:
+        - /status
+        kind: Application
+      project: dev-ace
+      source:
+        path: '{{ srcPath }}'
+        repoURL: '{{ srcRepoURL }}'
+        targetRevision: '{{ srcTargetRevision }}'
+      syncPolicy:
+        automated:
+          allowEmpty: true
+          prune: true
+          selfHeal: true         
+status: {}       

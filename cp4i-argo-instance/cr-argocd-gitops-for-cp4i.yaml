@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1beta1
+kind: ArgoCD
+metadata:
+  name: gitops-for-cp4i
+  namespace: gitops-for-cp4i
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+spec:
+  server:
+    route:
+      enabled: true
