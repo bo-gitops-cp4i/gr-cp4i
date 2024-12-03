@@ -1,0 +1,14 @@
+apiVersion: config.openshift.io/v1
+kind: ImageTagMirrorSet
+metadata:
+  name: cp4i-remote-repo-itms
+spec:
+  imageTagMirrors:
+    - mirrors:
+        - artifactory.dsv.com/ibm-public-remote
+      source: icr.io
+      mirrorSourcePolicy: NeverContactSource
+    - mirrors:
+        - artifactory.dsv.com/ibm-cloud-registry-cloud-pak-cp4i-remote
+      source: cp.icr.io
+      mirrorSourcePolicy: NeverContactSource
