@@ -20,7 +20,7 @@ spec:
   ignoreDifferences:
   - group: "appconnect.ibm.com"
     kind: "IntegrationRuntime"
-    name: "bo-tmp-ace-1-ir"
+    name: "prod-bo-tmp-ace-1-ir"
     jsonPointers:
     - /spec/configurations
 
