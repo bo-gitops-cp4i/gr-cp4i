@@ -6,6 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "20"
 spec:
+  applicationInstanceLabelKey: argocd.argoproj.io/instance
   server:
     route:
       enabled: true
