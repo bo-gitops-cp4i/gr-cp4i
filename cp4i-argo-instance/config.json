@@ -1,5 +1,5 @@
 {
-    "appName": "gitops-for-cp4i",
+    "appName": "app-7315-00001-gitops",
     "userGivenName": "app-7315-00001-gitops",
     "destNamespace": "app-7315-00001-gitops",
     "destServer": "https://kubernetes.default.svc",
