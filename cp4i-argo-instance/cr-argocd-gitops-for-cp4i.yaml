@@ -17,3 +17,7 @@ spec:
       g, APP-7315-admin, role:admin
       g, APP-7315-dev, role:readonly
     scopes: '[groups]'
+  sso:
+    dex:
+      openShiftOAuth: true
+    provider: dex
