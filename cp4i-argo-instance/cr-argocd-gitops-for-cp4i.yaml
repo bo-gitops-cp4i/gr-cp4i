@@ -2,10 +2,17 @@ apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
   name: gitops-for-cp4i
-  namespace: gitops-for-cp4i
+  namespace: app-7315-00001-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "20"
 spec:
   server:
     route:
       enabled: true
+  rbac:
+    defaultPolicy: ''
+    policy: |
+      g, cluster-admins, role:admin
+      g, APP-7315-admin, role:admin
+      g, APP-7315-dev, role:readonly
+    scopes: '[groups]'

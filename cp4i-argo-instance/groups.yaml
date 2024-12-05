@@ -1,0 +1,19 @@
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: APP-7315-admin
+  annotations:
+    argocd.argoproj.io/sync-wave: "-20"
+users:
+- admin
+
+---
+
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: APP-7315-dev
+  annotations:
+    argocd.argoproj.io/sync-wave: "-20"
+users:
+- developer

@@ -3,7 +3,7 @@ kind: ApplicationSet
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
-  name: gitops-for-cp4i
+  name: app-7315-00001-gitops
   namespace: openshift-gitops
 spec:
   generators:

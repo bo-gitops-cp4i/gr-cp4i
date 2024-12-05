@@ -1,0 +1,11 @@
+{
+    "appName": "gitops-for-cp4i",
+    "userGivenName": "gitops-for-cp4i",
+    "destNamespace": "gitops-for-cp4i",
+    "destServer": "https://kubernetes.default.svc",
+    "srcPath": "cp4i-argo-instance",
+    "srcRepoURL": "https://github.com/bo-gitops-cp4i/gr-cp4i.git",
+    "srcTargetRevision": "",
+    "labels": null,
+    "annotations": null
+  }

@@ -5,6 +5,8 @@ metadata:
   namespace: cp4i
   labels:
     backup.integration.ibm.com/component: platformnavigator        
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
 spec:
   license:
     accept: true

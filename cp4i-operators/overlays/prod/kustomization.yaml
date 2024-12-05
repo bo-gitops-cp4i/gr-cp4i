@@ -1,0 +1,8 @@
+# namePrefix: prod-
+resources:
+- ../../base
+labels:
+- includeSelectors: true
+  pairs:
+    dsv-app-id: app-731
+    variant: production
