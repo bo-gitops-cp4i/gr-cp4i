@@ -4,5 +4,5 @@ resources:
 labels:
 - includeSelectors: true
   pairs:
-    dsv-app-id: app-731
+    dsv-app-id: app-7315
     variant: production

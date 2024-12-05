@@ -4,7 +4,7 @@ metadata:
   name: appconnect-operator-catalogsource
   namespace: openshift-marketplace
   annotations:
-    argocd.argoproj.io/sync-wave: "10"
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   displayName: ibm-appconnect-12.0.5
   publisher: IBM
