@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
-  name: gitops-for-cp4i
+  name: app-7315-00001-gitops
   namespace: app-7315-00001-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "20"
@@ -20,4 +20,11 @@ spec:
   sso:
     dex:
       openShiftOAuth: true
+      resources:
+        limits:
+          cpu: 500m
+          memory: 256Mi
+        requests:
+          cpu: 250m
+          memory: 128Mi
     provider: dex
