@@ -5,6 +5,7 @@ resources:
 - cs-appconnect.yaml
 - cs-aut-foundation.yaml
 - cs-found-services.yaml
+- cs-ibm-licensing.yaml
 - cs-mq.yaml
 - cs-navigator.yaml
 - ns-cert-manager.yaml
