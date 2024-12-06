@@ -7,9 +7,7 @@ resources:
 - cs-found-services.yaml
 - cs-mq.yaml
 - cs-navigator.yaml
-# - idms.yaml
-# - itms.yaml
-# - kustomization.yaml
+- ns-cert-manager.yaml
 - ns-cert-manager-operator.yaml
 - ns-cp4i.yaml
 - ns-ibm-common-svc.yaml
