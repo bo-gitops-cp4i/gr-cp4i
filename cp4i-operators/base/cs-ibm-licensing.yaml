@@ -3,6 +3,8 @@ kind: CatalogSource
 metadata:
   name: ibm-licensing-catalog
   namespace: openshift-marketplace
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   displayName: IBM License Service Catalog
   publisher: IBM
