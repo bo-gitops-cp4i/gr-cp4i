@@ -1,6 +1,6 @@
 # namePrefix: prod-
 resources:
-- ../../base
+#- ../../base
 labels:
 - includeSelectors: true
   pairs:
