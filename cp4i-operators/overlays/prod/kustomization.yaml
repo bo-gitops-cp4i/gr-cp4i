@@ -1,6 +1,6 @@
 # namePrefix: prod-
 resources:
-- ../../base/cs-ibm-licensing.yaml
+- ../../base/
 labels:
 - includeSelectors: true
   pairs:
